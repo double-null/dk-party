@@ -20,6 +20,12 @@ def auth(login, password):
             return False
 
 
+def load(position):
+    x = position[0]
+    y = position[1]
+    return auto.pixel(x + 210, y + 70) == (63, 170, 200)
+
+
 def removeFlaws(position):
     x = position[0]
     y = position[1]
